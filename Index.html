@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Index </title>
+</head>
+
+<body>
+	<section>
+
+		<div id="SvartRektangel">
+			<p id="sökMenyText">SÖK</p>
+			      <p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			       <nav class="submenu" id="submenu2">
+				<ul>
+					<li><a href="#">ÖPPETTIDER</a></li>
+					<li><a href="OmOss.html">OM OSS</a></li>
+					<li><a href="HittaHit.html">HITTA HIT</a></li>
+					<li><a href="#">KAFE</a></li>
+					<li><a href="Sortiment.html">SORTIMENT</a></li>
+					<li><a href="#">TJÄNSTER</a></li>
+					<li><a href="#">PRESENTKORT</a></li>
+				    </ul>
+			       </nav>
+		       
+			       <div id="grönaRutanHem">
+				       <a href="Index.html">
+					       <p id="hemText">HEM</p>
+				       </a>
+				</div>
+		       </div>  
+	</section>
+
+	<header>
+		<img id="bakgrundsbild" src='https://imgur.com/VKoOnTH.jpg' alt='Smultronstället bild'>
+		<div id="rubrikBakgrund">
+		    <p id="rubrikFramsida">SMULTRONSTÄLLET</p>
+		    <p id="underRubrik">HANDELSTRÄGÅRD & KAFE</p>
+		</div> 
+	</header>
+
+	
+	<body>
+		<img id="smultonBild" src='https://imgur.com/MInHapC.jpg' alt='Smultron illustration'>
+
+		<div id="infoRuta">
+			<p id="rubrikInfo">INFORMATION</p>
+			<p id="textInfo">ADRESS: Holmsjön 70</p>
+			<p id="textInfo">905 96 Umeå</p>
+			<p id="textInfo">TEL:072-273 35 84</p>
+			<p id="textInfo">MAIL:info@smultronstaellet.se</p>
+			<a href="https://www.instagram.com/smultronstaellet_i_norr/" target="_blank" class="instagram-link">Besök oss på instagram</a>
+				
+		</div>
+
+
+		<div id="textRuta">
+			<p id="rubrikInfo">Nytt år - nya odlingsmöjligheter!</p>
+			<p id="textInfo">
+				Första halvan av vintern har bjudit på både
+				kyla och stora snömängder men vi har
+				börjat drömma om takdropp och sådder.Vi 
+				bläddrar bland fröer och krukor för att leta
+				fram det bästa sortimentet till er. Den 15
+				april öppnar vi upp butiken igen och 26-28
+				april är vi med på Nolia trädgårdsmässa,
+				hoppas vi ses där!
+			</p>			
+		</div>
+
+		<div id="videoRuta">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/CzCXYxhoEMQ?si=OuC-h9S_LIMAZPG1" 
+				title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+				encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+			</iframe>
+		</div>
+
+	</body>	
+
+	<script>
+		function toggleSubMenu(submenuId) {
+		    var submenu = document.getElementById(submenuId);
+		    if (submenu.style.display === "none") {
+			submenu.style.display = "flex";
+		    } else {
+			submenu.style.display = "none";
+		    }
+		}
+
+	 </script>
+    
+</body>
+
+</html>
+

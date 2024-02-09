@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>Päron</title>
+    
+
+</head>
+
+<style>
+	body {
+	background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+	}
+
+</style>
+
+
+
+<body>
+	<section>
+
+		<!-- Lägg till den svarta rutan med id "blackOverlay" -->
+		<div id="SvartRektangel">
+			<p id="sökMenyText">SÖK</p>
+			      <p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			       <nav class="submenu" id="submenu2">
+					<ul>
+						<li><a href="#">ÖPPETTIDER</a></li>
+						<li><a href="OmOss.html">OM OSS</a></li>
+						<li><a href="HittaHit.html">HITTA HIT</a></li>
+						<li><a href="#">KAFE</a></li>
+						<li><a href="Sortiment.html">SORTIMENT</a></li>
+						<li><a href="#">TJÄNSTER</a></li>
+						<li><a href="#">PRESENTKORT</a></li>
+				    	</ul>
+			       </nav>
+		       
+
+			       <!-- Lägg till den svarta rutan med id "blackOverlay" -->
+			       <div id="grönaRutanHem">
+				       <a href="Index.html">
+					       <p id="hemText">HEM</p>
+				       </a>
+			</div>
+		       </div>  
+	</section>
+
+	<div id="grönRuta">
+		<p id="rubrik">PÄRON</p>
+		<p id="text">Päron är starkväxande träd som med tiden blir ganska höga, ca 6 m. Nog finns det sorter som passar i de högre odlingszonerna men det är bra att ge dem ett gynnsamt läge. Sol, väldränerad jord och skydd mot nordliga vindar. Flera av våra päronsorter är helt självfertila medan vissa sorter behöver ett annat päronträd som kompis för att ge stor skörd. Träden kostar 750 kr/st.
+
+		</div>
+
+	
+
+</body>
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+    </script>
+    
+</html>

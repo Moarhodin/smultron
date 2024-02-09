@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>SORTIMENT</title>
+
+    	<style>
+		body {
+   			 background-color: #97a997; /* Ljusgrön bakgrundsfärg för hela sidan */
+		}
+
+		#SvartRuta{
+			position: absolute;
+   			top: 1cm;
+    			left: 0%;
+			width: 30vw;
+			height: 100vh; 
+			background-color: black; /* Hexadecimal kod för ren grön färg */
+			z-index: 3; /* Så att den ligger över bakgrundsbilden */
+
+			display: flex;
+    			flex-direction: column;
+			align-items: center;	
+   		}
+
+	   	#rubrikText{
+		
+			color: white;
+			font-size: 3.5vw; 
+			margin-top:1px ;
+			margin-bottom:10px ;
+			z-index: 4;
+			margin-top: 70px;
+			max-width: 310px; 
+			text-align: center;	
+		}
+
+		#infoText{
+		
+			color: white;
+			font-size: 1.5vw; 
+			margin-top:1px ;
+			margin-bottom:1px ;
+			z-index: 5;
+			max-width: 310px; 
+			text-align: center;	
+		
+		}
+
+		
+	
+
+		.bakgrund {
+    			position: fixed;
+    			width: 17vw;
+   			height: 35vh;
+    			background-color: #296829;
+    			z-index: 6;
+    			display: flex;
+    			justify-content: center;
+    		
+		}
+
+		.frukt {
+			position: absolute;
+			margin-top:12px ;
+    			color: white;
+    			font-size: 2.3vw;
+    			font-weight: semi-bold;
+    			z-index: 7;
+		}
+
+
+		.bild {
+			Position: absolute;
+			margin-top: 65px;
+  			width: 13vw;
+    			height: 25vh;
+    			z-index: 6;
+		}
+
+	
+		#positionÄpple{
+    			top: 15%;
+    			left: 35%;
+		}
+
+		#positionPäron {
+   			top: 15%;
+    			left: 55%;
+		}
+
+		#positionPlommon{
+    			top: 15%;
+    			left: 75%;
+		}
+
+		#positionKörsbär{
+    			top: 55%;
+    			left: 35%;
+		}
+
+		#positionKrikon{
+    			top: 55%;
+    			left: 55%;
+		}
+
+		#positionHäckplanta{
+    			top: 55%;
+    			left: 75%;
+		}		
+    </style>
+</head>
+
+
+<body>
+
+	<section>
+
+		<!-- Lägg till den svarta rutan med id "blackOverlay" -->
+		<div id="SvartRektangel">
+			<p id="sökMenyText">SÖK</p>
+			<p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			<nav class="submenu" id="submenu2">
+				<ul>
+					<li><a href="#">ÖPPETTIDER</a></li>
+					<li><a href="OmOss.html">OM OSS</a></li>
+					<li><a href="HittaHit.html">HITTA HIT</a></li>
+					<li><a href="#">KAFE</a></li>
+					<li><a href="Sortiment.html">SORTIMENT</a></li>
+					<li><a href="#">TJÄNSTER</a></li>
+					<li><a href="#">PRESENTKORT</a></li>
+				</ul>
+			</nav>
+		
+			<div id="grönaRutanHem">
+				<a href="Index.html">
+					<p id="hemText">HEM</p>
+				</a>
+			</div>
+		</div>  
+	</section>
+
+	<header>
+		<div id="SvartRuta">
+			<p id="rubrikText">SORTIMENT</p>
+			<p id="infoText">
+				Här i Sortiment 2023 kan du kika inför ditt besök hos oss. Längre ner på denna sida finns även
+				beskrivningar av våra fruktträdssorter samt häckplantor. Observera att vi inte kan hålla aktuell
+				 lagerstatus under säsongen så om du är ute efter någon särskild sort är det säkrast att maila 
+			 	eller ringa oss innan ditt besök. Vi har många sorters växter men tyvärr inget stort lager, 
+			 	därför krävs det att du förbeställer större mängder och häckplant. Om växten du vill ha finns i 
+				 Blomqvist Plantskolas sortiment men ej hos oss så tar vi hem dessa om du förbeställer. När vi 
+			 	meddelat dig att växterna finns att hämta är de reserverade för dig i 14 dagar och betalas vid 
+			 	uthämtning. Vi skickar inga växter utan all försäljning sker på Smultronstället i Holmsjön.
+			</p>
+		</div>
+	</header>
+
+	
+	<body>
+
+		<!-- För Äpplen -->
+		<a href="Apple.html"> 
+			<div class="bakgrund" id="positionÄpple">
+		   	 	<img class="bild" src='https://imgur.com/PZD9bmY.jpg' alt='Äpple'>
+		    		<p class="frukt">ÄPPLEN</p>
+			</div>
+		</a>
+	
+	    	<!-- För Päron -->
+	   	 <a href="Pear.html">
+			<div class="bakgrund" id="positionPäron">
+		   		<img class="bild" src='https://imgur.com/MG32WCs.jpg' alt='Päron'>
+		    		<p class="frukt">PÄRON</p>
+			</div>
+		</a>
+	
+
+	 	<!-- För Plommon -->
+	 	<a href="Plommon.html">
+			<div class="bakgrund" id="positionPlommon">
+		   		 <img class="bild" src='https://imgur.com/bW3gRQS.jpg' alt='Plommon'>
+		    		<p class="frukt">PLOMMON</p>
+			</div>
+		</a>
+	
+
+	 	<!-- För Körsbär-->
+	 	<a href="Körsbär.html">
+			<div class="bakgrund" id="positionKörsbär">
+		    		<img class="bild" src='https://imgur.com/kBMXIzS.jpg' alt='Körsbär'>
+		    		<p class="frukt">KÖRSBÄR</p>
+			</div>
+		</a>
+
+		 <!-- För Krikon-->
+	 	<a href="Krikon.html">
+			<div class="bakgrund" id="positionKrikon">
+		   		 <img class="bild" src='https://imgur.com/H48DAGm.jpg' alt='Krikon'>
+		    		<p class="frukt">KRIKON</p>
+			</div>
+		</a>
+
+	 	<!-- För Häckplanta-->
+	 	<a href="Häckplanta.html">
+			<div class="bakgrund" id="positionHäckplanta">
+		  		<img class="bild" src='https://imgur.com/wyufSIZ.jpg' alt='Häckplanta'>
+		    		<p class="frukt">HÄCKPLANTA</p>
+			</div>
+		</a>
+
+	</body>
+</div>
+	
+
+
+	
+</body>
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+    </script>
+    
+</html>

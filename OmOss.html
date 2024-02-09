@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="En sida om Smultronstället i Umeå">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>OM OSS</title>
+
+</head>
+    	<body>
+		<section>
+
+			
+			<div id="SvartRektangel">
+				<p id="sökMenyText">SÖK</p>
+				<p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+   
+				<nav class="submenu" id="submenu2">
+					<ul>
+					    <li><a href="#">ÖPPETTIDER</a></li>
+					    <li><a href="OmOss.html">OM OSS</a></li>
+					    <li><a href="HittaHit.html">HITTA HIT</a></li>
+					    <li><a href="#">KAFE</a></li>
+					    <li><a href="Sortiment.html">SORTIMENT</a></li>
+					    <li><a href="#">TJÄNSTER</a></li>
+					    <li><a href="#">PRESENTKORT</a></li>
+					</ul>
+				    </nav>
+				
+	
+       				<div id="grönaRutanHem">
+	       				<a href="Index.html">
+		       				<p id="hemText">HEM</p>
+	       				</a>
+				</div>
+       			</div>  
+		</section>
+
+		<header>
+			<div id="grönRuta">
+				<p id="rubrik">OM OSS</p>
+				<p id="text"> 
+					Smultronstället handelsträdgård och kafé ligger i byn Holmsjön utanför Umeå. 
+					I en skogsbacke med badstranden runt hörnet kan du botanisera bland växter, 
+					kolla in trädgårdsbutiken, fika eller bara vila en stund i hängmattan. Barnen
+					har en egen koja i skogsbrynet och brukar uppskatta att springa runt längst 
+					dom slingriga stigarna. Vattenskålar finns till våra fyrbenta vänner.
+				</p>
+			</div>
+		</header>
+
+		<div class="mail-container">
+			<div id="mailPopup" class="mail">
+			    	<form action="mailto:moarhodin@hotmail.com" method="post" enctype="text/plain">
+					<label for="namn">Namn:</label>
+					<input type="text" id="namn" name="namn" required>
+			    
+					<label for="e-post">E-post:</label>
+					<input type="email" id="e-post" name="e-post" required>
+			    
+					<label for="meddelande">Meddelande:</label>
+					<textarea id="meddelande" name="meddelande" rows="4" required></textarea>
+			    
+					<input type="submit" value="Skicka">
+			    	</form>
+			</div>
+		</div>
+
+	   
+	<script>
+       		function toggleSubMenu(submenuId) {
+	   		var submenu = document.getElementById(submenuId);
+	   		if (submenu.style.display === "none") {
+	       			submenu.style.display = "flex";
+	   		} else {
+	       			submenu.style.display = "none";
+	   		}
+       		}
+	</script>
+   
+</html>

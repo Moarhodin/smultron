@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webbsida skapad med HTML5">
+    <meta name="keywords" content="Umeå, kafe, växter">
+    <meta name="author" content="Moa Rhodin">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
+    <title>HITTA HIT</title>
+
+</head>
+
+<body>
+	<section>
+		<div id="SvartRektangel">
+			<p id="sökMenyText">SÖK</p>
+			<p id="sökMenyText" onclick="toggleSubMenu('submenu2')">MENY</p>
+
+			<nav class="submenu" id="submenu2">
+				<ul>
+					<li><a href="#">ÖPPETTIDER</a></li>
+					<li><a href="OmOss.html">OM OSS</a></li>
+					<li><a href="HittaHit.html">HITTA HIT</a></li>
+					<li><a href="#">KAFE</a></li>
+					<li><a href="Sortiment.html">SORTIMENT</a></li>
+					<li><a href="#">TJÄNSTER</a></li>
+					<li><a href="#">PRESENTKORT</a></li>
+				</ul>
+			</nav>
+		
+			<div id="grönaRutanHem">
+				<a href="Index.html">
+					<p id="hemText">HEM</p>
+				</a>
+			</div>
+		</div>  
+	</section>
+
+	<section>
+
+		<div id="grönRuta">
+	
+			<img id="Karta" src='https://imgur.com/L01Z2yN.jpg' alt='Karta'>
+		
+			<div id="TextContainer">
+				<p id="TextGronRuta">HITTA HIT</p>
+				<p id="TextGronRuta">Smultronstället ligger vid sjön Holmsjön, mittemellan Umeå och Holmsund. Du kommer hit från Umeå via Strömpilen/Gimonäs eller via Ålidhem/Tomtebo.</p>
+			</div>
+		</div>
+
+		<img id="Fordon" src='https://imgur.com/v9KUzQh.jpg' alt='Transportmedel'>
+
+		<p id="TextBuss"> Buss nr 123 och 124 från Umeå centrum (Vasaplan) mot Holmsund/Obbola. Kliv av på hållplats "Vägskäl Yttertavle". Sedan 15 minuters promenad mot Yttertavle.</p>
+		<p id="TextBil"> Från Umeå, kör Blå Vägen (Holmsundsvägen) mot Holmsund. Efter ca 6 km, sväng av vänster vid skylten Yttertavle 4. Efter byaskylten Holmsjön så ligger Smultronstället på vänster sida.</p>
+		<p id="TextCykel">Från Umeå, ta gärna den fina och krokiga vägen via Yttertavle! Smultronstället ligger precis efter sjön.</p>
+	</section>
+</body>
+
+    <script>
+	function toggleSubMenu(submenuId) {
+	    var submenu = document.getElementById(submenuId);
+	    if (submenu.style.display === "none") {
+		submenu.style.display = "flex";
+	    } else {
+		submenu.style.display = "none";
+	    }
+	}
+    </script>
+    
+</html>
+
